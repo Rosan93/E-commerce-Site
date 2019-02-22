@@ -1,0 +1,311 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<!-- Logo font -->
+	<link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+
+	<!-- Footer font -->
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<script src="../jquery/jquery-3.3.1.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="../jquery/jquery.mycart.js"></script>
+
+	<!-- external javascript -->
+	<script src="../jquery/customJS.js"></script>
+
+	<!-- Social Media Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Dream Online Store</title>
+
+	<script>
+	function myFunction() {
+	  var x = document.getElementById("navItems");
+	  if (x.style.display === "block") {
+	    x.style.display = "none";
+	  } else {
+	    x.style.display = "block";
+	  }
+	}
+</script>
+
+	<style>
+		input[type=text], select {
+		  width: 50%;
+		  padding: 5px 10px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+
+		input[type=submit] {
+		  width: 20%;
+		  background-color: #4CAF50;
+		  color: white;
+		  padding: 5px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="nav">
+		<div class="logo">
+				<h2><a href="../html/Home.html" style="text-decoration: none;color:black !important;"><b>DreamOnlineStore</b></a></h2>
+		</div>
+
+		<div id="navItems">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="WomenClothes.html">Women Clothes</a></li>
+				<li><a href="MenClothes.html">Men Clothes</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li><a href="SignIn.html">Sign In</a></li>
+				</div>
+			</ul>
+		</div>
+
+		<div class="hamMenu">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+			</a>
+		</div>
+	</div>
+
+<div class = "gridView">
+<div class="closet">
+	<h1>Trending</h1>
+	<div class="gallery">
+		<div class="productName">
+			<h4>One Piece</h4>
+		</div>
+		<a target="_blank" href="../images/A1.jpg">
+		  <img src="../images/A1.jpg" alt="Ladies One Piece" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 35000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+
+	<div class="gallery">
+		<div class="productName">
+			<h4>Bag</h4>
+		</div>
+		<a target="_blank" href="../images/B1.jpeg">
+		  <img src="../images/B1.jpeg" alt="Bag" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 20000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+
+	<div class="gallery">
+		<div class="productName">
+			<h4>Bag</h4>
+		</div>
+		<a target="_blank" href="../images/B2.jpeg">
+		  <img src="../images/B2.jpeg" alt="Bag" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+
+	<div class="gallery">
+		<div class="productName">
+			<h4>Shoe</h4>
+		</div>
+		<a target="_blank" href="../images/Bt1.jpg">
+		  <img src="../images/Bt1.jpg" alt="Gents Sweater" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+	<div class="gallery">
+		<div class="productName">
+			<h4>T-Shirt</h4>
+		</div>
+		<a target="_blank" href="../images/G1.jpeg">
+		  <img src="../images/G1.jpeg" alt="Gents Wear" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+
+</div>
+</div>
+
+<div class = "gridView">
+<div class="closet">
+	<h1>Latest</h1>
+	<div class="gallery">
+		<div class="productName">
+			<h4>T-Shirt with long Sleeve</h4>
+		</div>
+		<a target="_blank" href="../images/G2.jpeg">
+		  <img src="../images/G2.jpeg" alt="Party Shoes" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+
+	<div class="gallery">
+		<div class="productName">
+			<h4>Leather Shoe</h4>
+		</div>
+		<a target="_blank" href="../images/GNt1.jpg">
+		  <img src="../images/GNt1.jpg" alt="Ladies Outer" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+
+	<div class="gallery">
+		<div class="productName">
+			<h4>Pant</h4>
+		</div>
+		<a target="_blank" href="../images/Pt1.jpg">
+		  <img src="../images/Pt1.jpg" alt="Ladies Heels" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+
+	<div class="gallery">
+		<div class="productName">
+			<h4>Heels</h4>
+		</div>
+		<a target="_blank" href="../images/S1.jpeg">
+		  <img src="../images/S1.jpeg" alt="Gents Shoes" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+	<div class="gallery">
+		<div class="productName">
+			<h4>Boot</h4>
+		</div>
+		<a target="_blank" href="../images/S2.jpeg">
+		  <img src="../images/S2.jpeg" alt="Shoes" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+</div>
+</div>
+
+<div class = "gridView">
+<div class="closet">
+	<h1>Sale</h1>
+	<div class="gallery">
+		<div class="productName">
+			<h4>Outer</h4>
+		</div>
+		<a target="_blank" href="../images/Sa1.jpg">
+		  <img src="../images/Sa1.jpg" alt="Shoes" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+
+	<div class="gallery">
+		<div class="productName">
+			<h4>Party Shoe</h4>
+		</div>
+		<a target="_blank" href="../images/Sh2.jpg">
+		  <img src="../images/Sh2.jpg" alt="Shoes" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+
+	<div class="gallery">
+		<div class="productName">
+			<h4>Sports Shoe</h4>
+		</div>
+		<a target="_blank" href="../images/Za1.jpg">
+		  <img src="../images/Za1.jpg" alt="Shoes" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+
+	<div class="gallery">
+		<div class="productName">
+			<h4>Hoodies</h4>
+		</div>
+		<a target="_blank" href="../images/Sr1.jpg">
+		  <img src="../images/Sr1.jpg" alt="Shoes" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+
+	<div class="gallery">
+		<div class="productName">
+			<h4>Watch</h4>
+		</div>
+		<a target="_blank" href="../images/Sr1.jpg">
+		  <img src="../images/Wt6.jpg" alt="Shoes" width="600" height="400">
+		</a>
+		<div class="desc">Price: Nrs. 25000</div>
+		<button type="submit" class="addCart" onclick="addCart()">Add to Cart</button>
+	</div>
+</div>
+
+</div>
+
+<!-- Footer Sections -->
+<div class="footer">
+	<div class="info">
+		<p>Head-Quarter: Lolang, Goldhunga Municipality-Kathmandu</p>
+		<p>Branch: Bishal-Nagar, Chabail</p>
+		<p>&copy 2019 All Rights Reserved</p>
+	</div>
+	<div class="info">
+		<p>Follow us at:</p>
+		<a href="https://www.fb.com/" class="fa fa-facebook"></a>
+		<a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+		<a href="https://www.google.com/" class="fa fa-google"></a>
+		<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+		<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+		<a href="https://www.skype.com/" class="fa fa-skype"></a>
+	</div>
+	<div class="info" style="padding-top:4% !important;">
+		<p>Feedback</p>
+		<form>
+    <label>Email</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter Email Address.">
+
+    <br><label>Location</label>
+    <select id="location" name="location">
+      <option value="kathmandu">Kathmandu</option>
+      <option value="pokhara">Pokhara</option>
+      <option value="dharan">Dharan</option>
+    </select>
+
+	  <br><label for="lname">Feedback</label>
+    <input type="text" placeholder="Your Feedback">
+
+    <br><input type="submit" value="Submit">
+  </form>
+	</div>
+
+</div>
+</body>
+
+</html>

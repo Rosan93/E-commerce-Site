@@ -1,0 +1,92 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Logo font -->
+	<link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+	<!-- Sign in font -->
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<!-- Footer font -->
+	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<script src="../jquery/jquery-3.3.1.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Social Media Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Sign In</title>
+	<script type="text/javascript">
+		function signIn(){
+			var a=document.getElementsByClassName("SignIn-box");
+			a[0].innerHTML="Login Successful";
+			document.getElementById("sigin").style.visibility = "hidden";
+		}
+
+		function signup(){
+			alert("Page Under Construction")
+		}
+
+		function myFunction() {
+			var x = document.getElementById("navItems");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
+  <style media="screen">
+  	.nav .logo #sigin{
+			color:yellow;
+		}
+  </style>
+</head>
+<body>
+
+	<div class="nav">
+		<div class="logo">
+				<h2><a href="../html/Home.html" style="text-decoration: none;color:black !important;"><b>DreamOnlineStore</b></a></h2>
+		</div>
+
+		<div id="navItems">
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="WomenClothes.html">Women Clothes</a></li>
+				<li><a href="MenClothes.html">Men Clothes</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li><a href="SignIn.html">Sign In</a></li>
+				</div>
+			</ul>
+		</div>
+
+		<div class="hamMenu">
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+	</div>
+
+
+	<div class="SignIn-box">
+		<h1>SignIn</h1>
+		<div class="textbox">
+			<i class="fa fa-user" aria-hidden="true"></i>
+			<input type="text" placeholder="Username" name="" value="">
+		</div>
+
+		<div class="textbox">
+			<i class="fa fa-lock" aria-hidden="true"></i>
+			<input type="password" placeholder="Password" name="" value="">
+		</div>
+
+		<input class="button" type="button" name="" value="Sign In" onclick="signIn()" style="margin-top:6% !important;">
+		<p>Don't have an account? Sign Up <a href="#" onclick="signup()">here</a></p>
+	</div>
+
+</body>
+
+</html>
